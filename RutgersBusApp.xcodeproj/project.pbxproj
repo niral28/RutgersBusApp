@@ -1,0 +1,1254 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		793A56951C3701C100F489F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56941C3701C100F489F7 /* AppDelegate.swift */; };
+		793A569A1C3701C100F489F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793A56981C3701C100F489F7 /* Main.storyboard */; };
+		793A569C1C3701C100F489F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 793A569B1C3701C100F489F7 /* Assets.xcassets */; };
+		793A569F1C3701C100F489F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 793A569D1C3701C100F489F7 /* LaunchScreen.storyboard */; };
+		793A56AA1C3701C100F489F7 /* RutgersBusAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56A91C3701C100F489F7 /* RutgersBusAppTests.swift */; };
+		793A56B51C3701C100F489F7 /* RutgersBusAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56B41C3701C100F489F7 /* RutgersBusAppUITests.swift */; };
+		793A56C51C37029200F489F7 /* TableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56C41C37029200F489F7 /* TableTableViewController.swift */; };
+		793A56CB1C37814C00F489F7 /* BusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56CA1C37814C00F489F7 /* BusInfo.swift */; };
+		793A56CF1C389F3200F489F7 /* BusRoutesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56CE1C389F3200F489F7 /* BusRoutesTableViewController.swift */; };
+		793A56D11C39A55300F489F7 /* ActiveRoutesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56D01C39A55300F489F7 /* ActiveRoutesTableViewController.swift */; };
+		793A56D31C39AD4A00F489F7 /* ARouteListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56D21C39AD4A00F489F7 /* ARouteListTableViewController.swift */; };
+		79B163511C3F2B01003FFD88 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B163501C3F2B01003FFD88 /* MapKit.framework */; };
+		79B163531C3F2D94003FFD88 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B163521C3F2D94003FFD88 /* CoreLocation.framework */; };
+		79B163551C419296003FFD88 /* livingstonPlaza.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 79B163541C419296003FFD88 /* livingstonPlaza.gpx */; };
+		79B163561C419296003FFD88 /* livingstonPlaza.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 79B163541C419296003FFD88 /* livingstonPlaza.gpx */; };
+		79B163571C419296003FFD88 /* livingstonPlaza.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 79B163541C419296003FFD88 /* livingstonPlaza.gpx */; };
+		79C247A41C43655400D17234 /* BusStopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C247A31C43655400D17234 /* BusStopRow.swift */; };
+		79C247A71C44191700D17234 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C247A51C44191700D17234 /* Interface.storyboard */; };
+		79C247A81C44191700D17234 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C247A51C44191700D17234 /* Interface.storyboard */; };
+		79C247AC1C446DBF00D17234 /* NearbyStopsInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C247AB1C446DBF00D17234 /* NearbyStopsInterfaceController.swift */; };
+		79C247AE1C449D3E00D17234 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C247AD1C449D3E00D17234 /* CoreLocation.framework */; };
+		79C247B01C449D9A00D17234 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79C247AF1C449D9A00D17234 /* MapKit.framework */; };
+		79C247B21C45571E00D17234 /* NearbyBusStopRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C247B11C45571E00D17234 /* NearbyBusStopRow.swift */; };
+		79C247B41C456B2000D17234 /* BusRouteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C247B31C456B2000D17234 /* BusRouteRow.swift */; };
+		79C247B61C456CA300D17234 /* NearbyBusRouteInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C247B51C456CA300D17234 /* NearbyBusRouteInterfaceController.swift */; };
+		79E496971C419DB9007E433E /* Silvers Apartment.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 79E496961C419DB9007E433E /* Silvers Apartment.gpx */; };
+		79E496E11C42E472007E433E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E496E01C42E472007E433E /* Assets.xcassets */; };
+		79E496E81C42E472007E433E /* RUiWatch Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 79E496E71C42E472007E433E /* RUiWatch Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		79E496EF1C42E472007E433E /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E496EE1C42E472007E433E /* InterfaceController.swift */; };
+		79E496F11C42E472007E433E /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E496F01C42E472007E433E /* ExtensionDelegate.swift */; };
+		79E496F31C42E472007E433E /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E496F21C42E472007E433E /* NotificationController.swift */; };
+		79E496F51C42E472007E433E /* GlanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E496F41C42E472007E433E /* GlanceController.swift */; };
+		79E496F71C42E472007E433E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79E496F61C42E472007E433E /* Assets.xcassets */; };
+		79E496FB1C42E472007E433E /* RUiWatch.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 79E496DB1C42E472007E433E /* RUiWatch.app */; };
+		79E4970E1C433452007E433E /* DetailInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E497031C42F7C3007E433E /* DetailInterfaceController.swift */; };
+		79E497121C4338D9007E433E /* ActiveRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E497111C4338D9007E433E /* ActiveRoute.swift */; };
+		79E497131C433A10007E433E /* BusInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 793A56CA1C37814C00F489F7 /* BusInfo.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		793A56A61C3701C100F489F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793A56891C3701C000F489F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793A56901C3701C100F489F7;
+			remoteInfo = RutgersBusApp;
+		};
+		793A56B11C3701C100F489F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793A56891C3701C000F489F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793A56901C3701C100F489F7;
+			remoteInfo = RutgersBusApp;
+		};
+		793A56E41C3B1D3200F489F7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793A56891C3701C000F489F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 793A56E11C3B1D3200F489F7;
+			remoteInfo = "Rutgers Watch App Extension";
+		};
+		79E496A81C42DF97007E433E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793A56891C3701C000F489F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E496A51C42DF97007E433E;
+			remoteInfo = "Rutgers Bus Extension";
+		};
+		79E496E91C42E472007E433E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793A56891C3701C000F489F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E496E61C42E472007E433E;
+			remoteInfo = "RUiWatch Extension";
+		};
+		79E496F91C42E472007E433E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 793A56891C3701C000F489F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79E496DA1C42E472007E433E;
+			remoteInfo = RUiWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		793A56FC1C3B1D3200F489F7 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56FE1C3B1D3200F489F7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				79E496FB1C42E472007E433E /* RUiWatch.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496BA1C42DF97007E433E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496FF1C42E472007E433E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				79E496E81C42E472007E433E /* RUiWatch Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		793A56941C3701C100F489F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		793A56991C3701C100F489F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		793A569B1C3701C100F489F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		793A569E1C3701C100F489F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		793A56A01C3701C100F489F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793A56A91C3701C100F489F7 /* RutgersBusAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutgersBusAppTests.swift; sourceTree = "<group>"; };
+		793A56AB1C3701C100F489F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793A56B41C3701C100F489F7 /* RutgersBusAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RutgersBusAppUITests.swift; sourceTree = "<group>"; };
+		793A56B61C3701C100F489F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		793A56C41C37029200F489F7 /* TableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableTableViewController.swift; path = ../TableTableViewController.swift; sourceTree = "<group>"; };
+		793A56CA1C37814C00F489F7 /* BusInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BusInfo.swift; path = RutgersBusApp/BusInfo.swift; sourceTree = "<group>"; };
+		793A56CE1C389F3200F489F7 /* BusRoutesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusRoutesTableViewController.swift; sourceTree = "<group>"; };
+		793A56D01C39A55300F489F7 /* ActiveRoutesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRoutesTableViewController.swift; sourceTree = "<group>"; };
+		793A56D21C39AD4A00F489F7 /* ARouteListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARouteListTableViewController.swift; sourceTree = "<group>"; };
+		79B163501C3F2B01003FFD88 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		79B163521C3F2D94003FFD88 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		79B163541C419296003FFD88 /* livingstonPlaza.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = livingstonPlaza.gpx; sourceTree = "<group>"; };
+		79C2479C1C43401900D17234 /* RutgersBusApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RutgersBusApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C2479D1C43401900D17234 /* RutgersBusAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutgersBusAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C2479E1C43401900D17234 /* RutgersBusAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RutgersBusAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C2479F1C43401900D17234 /* Rutgers Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rutgers Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C247A01C43401900D17234 /* Rutgers Watch App Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rutgers Watch App Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C247A11C43401900D17234 /* Rutgers Bus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rutgers Bus.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C247A21C43401900D17234 /* Rutgers Bus Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rutgers Bus Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79C247A31C43655400D17234 /* BusStopRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusStopRow.swift; sourceTree = "<group>"; };
+		79C247A61C44191700D17234 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		79C247AB1C446DBF00D17234 /* NearbyStopsInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyStopsInterfaceController.swift; sourceTree = "<group>"; };
+		79C247AD1C449D3E00D17234 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/CoreLocation.framework; sourceTree = DEVELOPER_DIR; };
+		79C247AF1C449D9A00D17234 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.1.sdk/System/Library/Frameworks/MapKit.framework; sourceTree = DEVELOPER_DIR; };
+		79C247B11C45571E00D17234 /* NearbyBusStopRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyBusStopRow.swift; sourceTree = "<group>"; };
+		79C247B31C456B2000D17234 /* BusRouteRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BusRouteRow.swift; sourceTree = "<group>"; };
+		79C247B51C456CA300D17234 /* NearbyBusRouteInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NearbyBusRouteInterfaceController.swift; sourceTree = "<group>"; };
+		79E496951C4193FB007E433E /* Livingston Plaza.gpx */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "Livingston Plaza.gpx"; sourceTree = "<group>"; };
+		79E496961C419DB9007E433E /* Silvers Apartment.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "Silvers Apartment.gpx"; sourceTree = "<group>"; };
+		79E496DB1C42E472007E433E /* RUiWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RUiWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E496E01C42E472007E433E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E496E21C42E472007E433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E496E71C42E472007E433E /* RUiWatch Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "RUiWatch Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		79E496ED1C42E472007E433E /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		79E496EE1C42E472007E433E /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		79E496F01C42E472007E433E /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		79E496F21C42E472007E433E /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		79E496F41C42E472007E433E /* GlanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlanceController.swift; sourceTree = "<group>"; };
+		79E496F61C42E472007E433E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79E496F81C42E472007E433E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79E497031C42F7C3007E433E /* DetailInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailInterfaceController.swift; path = "RUiWatch Extension/DetailInterfaceController.swift"; sourceTree = SOURCE_ROOT; };
+		79E497111C4338D9007E433E /* ActiveRoute.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActiveRoute.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		793A568E1C3701C100F489F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B163531C3F2D94003FFD88 /* CoreLocation.framework in Frameworks */,
+				79B163511C3F2B01003FFD88 /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56A21C3701C100F489F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56AD1C3701C100F489F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56DF1C3B1D3200F489F7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496A31C42DF97007E433E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496E41C42E472007E433E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C247B01C449D9A00D17234 /* MapKit.framework in Frameworks */,
+				79C247AE1C449D3E00D17234 /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		793A56881C3701C000F489F7 = {
+			isa = PBXGroup;
+			children = (
+				79C247AF1C449D9A00D17234 /* MapKit.framework */,
+				79C247AD1C449D3E00D17234 /* CoreLocation.framework */,
+				79B163541C419296003FFD88 /* livingstonPlaza.gpx */,
+				79B163521C3F2D94003FFD88 /* CoreLocation.framework */,
+				79B163501C3F2B01003FFD88 /* MapKit.framework */,
+				793A56CA1C37814C00F489F7 /* BusInfo.swift */,
+				793A56931C3701C100F489F7 /* RutgersBusApp */,
+				793A56A81C3701C100F489F7 /* RutgersBusAppTests */,
+				793A56B31C3701C100F489F7 /* RutgersBusAppUITests */,
+				79E496DB1C42E472007E433E /* RUiWatch.app */,
+				79E496DC1C42E472007E433E /* RUiWatch */,
+				79E496E71C42E472007E433E /* RUiWatch Extension.appex */,
+				79E496EB1C42E472007E433E /* RUiWatch Extension */,
+				79C2479C1C43401900D17234 /* RutgersBusApp.app */,
+				79C2479D1C43401900D17234 /* RutgersBusAppTests.xctest */,
+				79C2479E1C43401900D17234 /* RutgersBusAppUITests.xctest */,
+				79C2479F1C43401900D17234 /* Rutgers Watch App.app */,
+				79C247A01C43401900D17234 /* Rutgers Watch App Extension.appex */,
+				79C247A11C43401900D17234 /* Rutgers Bus.app */,
+				79C247A21C43401900D17234 /* Rutgers Bus Extension.appex */,
+			);
+			sourceTree = "<group>";
+		};
+		793A56931C3701C100F489F7 /* RutgersBusApp */ = {
+			isa = PBXGroup;
+			children = (
+				793A56941C3701C100F489F7 /* AppDelegate.swift */,
+				793A56C41C37029200F489F7 /* TableTableViewController.swift */,
+				79E496951C4193FB007E433E /* Livingston Plaza.gpx */,
+				79E496961C419DB9007E433E /* Silvers Apartment.gpx */,
+				793A56CE1C389F3200F489F7 /* BusRoutesTableViewController.swift */,
+				793A56D01C39A55300F489F7 /* ActiveRoutesTableViewController.swift */,
+				793A56D21C39AD4A00F489F7 /* ARouteListTableViewController.swift */,
+				793A56981C3701C100F489F7 /* Main.storyboard */,
+				793A569B1C3701C100F489F7 /* Assets.xcassets */,
+				793A569D1C3701C100F489F7 /* LaunchScreen.storyboard */,
+				793A56A01C3701C100F489F7 /* Info.plist */,
+			);
+			path = RutgersBusApp;
+			sourceTree = "<group>";
+		};
+		793A56A81C3701C100F489F7 /* RutgersBusAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				793A56A91C3701C100F489F7 /* RutgersBusAppTests.swift */,
+				793A56AB1C3701C100F489F7 /* Info.plist */,
+			);
+			path = RutgersBusAppTests;
+			sourceTree = "<group>";
+		};
+		793A56B31C3701C100F489F7 /* RutgersBusAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				793A56B41C3701C100F489F7 /* RutgersBusAppUITests.swift */,
+				793A56B61C3701C100F489F7 /* Info.plist */,
+			);
+			path = RutgersBusAppUITests;
+			sourceTree = "<group>";
+		};
+		79E496DC1C42E472007E433E /* RUiWatch */ = {
+			isa = PBXGroup;
+			children = (
+				79E496E01C42E472007E433E /* Assets.xcassets */,
+				79C247A51C44191700D17234 /* Interface.storyboard */,
+				79E496E21C42E472007E433E /* Info.plist */,
+			);
+			path = RUiWatch;
+			sourceTree = "<group>";
+		};
+		79E496EB1C42E472007E433E /* RUiWatch Extension */ = {
+			isa = PBXGroup;
+			children = (
+				79E497111C4338D9007E433E /* ActiveRoute.swift */,
+				79C247A31C43655400D17234 /* BusStopRow.swift */,
+				79C247B11C45571E00D17234 /* NearbyBusStopRow.swift */,
+				79C247B31C456B2000D17234 /* BusRouteRow.swift */,
+				79E496EE1C42E472007E433E /* InterfaceController.swift */,
+				79E497031C42F7C3007E433E /* DetailInterfaceController.swift */,
+				79C247AB1C446DBF00D17234 /* NearbyStopsInterfaceController.swift */,
+				79C247B51C456CA300D17234 /* NearbyBusRouteInterfaceController.swift */,
+				79E496F01C42E472007E433E /* ExtensionDelegate.swift */,
+				79E496F21C42E472007E433E /* NotificationController.swift */,
+				79E496F41C42E472007E433E /* GlanceController.swift */,
+				79E496F61C42E472007E433E /* Assets.xcassets */,
+				79E496F81C42E472007E433E /* Info.plist */,
+				79E496EC1C42E472007E433E /* Supporting Files */,
+			);
+			path = "RUiWatch Extension";
+			sourceTree = "<group>";
+		};
+		79E496EC1C42E472007E433E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				79E496ED1C42E472007E433E /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		793A56901C3701C100F489F7 /* RutgersBusApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793A56B91C3701C100F489F7 /* Build configuration list for PBXNativeTarget "RutgersBusApp" */;
+			buildPhases = (
+				793A568D1C3701C100F489F7 /* Sources */,
+				793A568E1C3701C100F489F7 /* Frameworks */,
+				793A568F1C3701C100F489F7 /* Resources */,
+				793A56FE1C3B1D3200F489F7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E496FA1C42E472007E433E /* PBXTargetDependency */,
+			);
+			name = RutgersBusApp;
+			productName = RutgersBusApp;
+			productReference = 79C2479C1C43401900D17234 /* RutgersBusApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		793A56A41C3701C100F489F7 /* RutgersBusAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793A56BC1C3701C100F489F7 /* Build configuration list for PBXNativeTarget "RutgersBusAppTests" */;
+			buildPhases = (
+				793A56A11C3701C100F489F7 /* Sources */,
+				793A56A21C3701C100F489F7 /* Frameworks */,
+				793A56A31C3701C100F489F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793A56A71C3701C100F489F7 /* PBXTargetDependency */,
+			);
+			name = RutgersBusAppTests;
+			productName = RutgersBusAppTests;
+			productReference = 79C2479D1C43401900D17234 /* RutgersBusAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		793A56AF1C3701C100F489F7 /* RutgersBusAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793A56BF1C3701C100F489F7 /* Build configuration list for PBXNativeTarget "RutgersBusAppUITests" */;
+			buildPhases = (
+				793A56AC1C3701C100F489F7 /* Sources */,
+				793A56AD1C3701C100F489F7 /* Frameworks */,
+				793A56AE1C3701C100F489F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793A56B21C3701C100F489F7 /* PBXTargetDependency */,
+			);
+			name = RutgersBusAppUITests;
+			productName = RutgersBusAppUITests;
+			productReference = 79C2479E1C43401900D17234 /* RutgersBusAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		793A56D51C3B1D3200F489F7 /* Rutgers Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793A56FD1C3B1D3200F489F7 /* Build configuration list for PBXNativeTarget "Rutgers Watch App" */;
+			buildPhases = (
+				793A56D41C3B1D3200F489F7 /* Resources */,
+				793A56FC1C3B1D3200F489F7 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				793A56E51C3B1D3200F489F7 /* PBXTargetDependency */,
+			);
+			name = "Rutgers Watch App";
+			productName = "Rutgers Watch App";
+			productReference = 79C2479F1C43401900D17234 /* Rutgers Watch App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		793A56E11C3B1D3200F489F7 /* Rutgers Watch App Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 793A56FB1C3B1D3200F489F7 /* Build configuration list for PBXNativeTarget "Rutgers Watch App Extension" */;
+			buildPhases = (
+				793A56DE1C3B1D3200F489F7 /* Sources */,
+				793A56DF1C3B1D3200F489F7 /* Frameworks */,
+				793A56E01C3B1D3200F489F7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rutgers Watch App Extension";
+			productName = "Rutgers Watch App Extension";
+			productReference = 79C247A01C43401900D17234 /* Rutgers Watch App Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		79E496991C42DF96007E433E /* Rutgers Bus */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E496BB1C42DF97007E433E /* Build configuration list for PBXNativeTarget "Rutgers Bus" */;
+			buildPhases = (
+				79E496981C42DF96007E433E /* Resources */,
+				79E496BA1C42DF97007E433E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E496A91C42DF97007E433E /* PBXTargetDependency */,
+			);
+			name = "Rutgers Bus";
+			productName = "Rutgers Bus";
+			productReference = 79C247A11C43401900D17234 /* Rutgers Bus.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		79E496A51C42DF97007E433E /* Rutgers Bus Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E496B71C42DF97007E433E /* Build configuration list for PBXNativeTarget "Rutgers Bus Extension" */;
+			buildPhases = (
+				79E496A21C42DF97007E433E /* Sources */,
+				79E496A31C42DF97007E433E /* Frameworks */,
+				79E496A41C42DF97007E433E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rutgers Bus Extension";
+			productName = "Rutgers Bus Extension";
+			productReference = 79C247A21C43401900D17234 /* Rutgers Bus Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		79E496DA1C42E472007E433E /* RUiWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E497001C42E472007E433E /* Build configuration list for PBXNativeTarget "RUiWatch" */;
+			buildPhases = (
+				79E496D91C42E472007E433E /* Resources */,
+				79E496FF1C42E472007E433E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79E496EA1C42E472007E433E /* PBXTargetDependency */,
+			);
+			name = RUiWatch;
+			productName = RUiWatch;
+			productReference = 79E496DB1C42E472007E433E /* RUiWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		79E496E61C42E472007E433E /* RUiWatch Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79E496FC1C42E472007E433E /* Build configuration list for PBXNativeTarget "RUiWatch Extension" */;
+			buildPhases = (
+				79E496E31C42E472007E433E /* Sources */,
+				79E496E41C42E472007E433E /* Frameworks */,
+				79E496E51C42E472007E433E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "RUiWatch Extension";
+			productName = "RUiWatch Extension";
+			productReference = 79E496E71C42E472007E433E /* RUiWatch Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		793A56891C3701C000F489F7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = Niral;
+				TargetAttributes = {
+					793A56901C3701C100F489F7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					793A56A41C3701C100F489F7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+						TestTargetID = 793A56901C3701C100F489F7;
+					};
+					793A56AF1C3701C100F489F7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+						TestTargetID = 793A56901C3701C100F489F7;
+					};
+					793A56D51C3B1D3200F489F7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					793A56E11C3B1D3200F489F7 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+					79E496991C42DF96007E433E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+					};
+					79E496A51C42DF97007E433E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+					};
+					79E496DA1C42E472007E433E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+					};
+					79E496E61C42E472007E433E = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = G9EQ3UECJ8;
+					};
+				};
+			};
+			buildConfigurationList = 793A568C1C3701C000F489F7 /* Build configuration list for PBXProject "RutgersBusApp" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 793A56881C3701C000F489F7;
+			productRefGroup = 793A56881C3701C000F489F7;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				793A56901C3701C100F489F7 /* RutgersBusApp */,
+				793A56A41C3701C100F489F7 /* RutgersBusAppTests */,
+				793A56AF1C3701C100F489F7 /* RutgersBusAppUITests */,
+				793A56D51C3B1D3200F489F7 /* Rutgers Watch App */,
+				793A56E11C3B1D3200F489F7 /* Rutgers Watch App Extension */,
+				79E496991C42DF96007E433E /* Rutgers Bus */,
+				79E496A51C42DF97007E433E /* Rutgers Bus Extension */,
+				79E496DA1C42E472007E433E /* RUiWatch */,
+				79E496E61C42E472007E433E /* RUiWatch Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		793A568F1C3701C100F489F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793A569F1C3701C100F489F7 /* LaunchScreen.storyboard in Resources */,
+				79B163551C419296003FFD88 /* livingstonPlaza.gpx in Resources */,
+				793A569C1C3701C100F489F7 /* Assets.xcassets in Resources */,
+				793A569A1C3701C100F489F7 /* Main.storyboard in Resources */,
+				79E496971C419DB9007E433E /* Silvers Apartment.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56A31C3701C100F489F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B163561C419296003FFD88 /* livingstonPlaza.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56AE1C3701C100F489F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79B163571C419296003FFD88 /* livingstonPlaza.gpx in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56D41C3B1D3200F489F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56E01C3B1D3200F489F7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496981C42DF96007E433E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496A41C42DF97007E433E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496D91C42E472007E433E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C247A71C44191700D17234 /* Interface.storyboard in Resources */,
+				79E496E11C42E472007E433E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496E51C42E472007E433E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79C247A81C44191700D17234 /* Interface.storyboard in Resources */,
+				79E496F71C42E472007E433E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		793A568D1C3701C100F489F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793A56D11C39A55300F489F7 /* ActiveRoutesTableViewController.swift in Sources */,
+				793A56C51C37029200F489F7 /* TableTableViewController.swift in Sources */,
+				793A56CF1C389F3200F489F7 /* BusRoutesTableViewController.swift in Sources */,
+				793A56CB1C37814C00F489F7 /* BusInfo.swift in Sources */,
+				793A56951C3701C100F489F7 /* AppDelegate.swift in Sources */,
+				793A56D31C39AD4A00F489F7 /* ARouteListTableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56A11C3701C100F489F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793A56AA1C3701C100F489F7 /* RutgersBusAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56AC1C3701C100F489F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				793A56B51C3701C100F489F7 /* RutgersBusAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		793A56DE1C3B1D3200F489F7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496A21C42DF97007E433E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79E496E31C42E472007E433E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79E4970E1C433452007E433E /* DetailInterfaceController.swift in Sources */,
+				79E496F31C42E472007E433E /* NotificationController.swift in Sources */,
+				79E497121C4338D9007E433E /* ActiveRoute.swift in Sources */,
+				79C247A41C43655400D17234 /* BusStopRow.swift in Sources */,
+				79C247B21C45571E00D17234 /* NearbyBusStopRow.swift in Sources */,
+				79C247B61C456CA300D17234 /* NearbyBusRouteInterfaceController.swift in Sources */,
+				79E496F11C42E472007E433E /* ExtensionDelegate.swift in Sources */,
+				79E496EF1C42E472007E433E /* InterfaceController.swift in Sources */,
+				79E497131C433A10007E433E /* BusInfo.swift in Sources */,
+				79C247B41C456B2000D17234 /* BusRouteRow.swift in Sources */,
+				79C247AC1C446DBF00D17234 /* NearbyStopsInterfaceController.swift in Sources */,
+				79E496F51C42E472007E433E /* GlanceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		793A56A71C3701C100F489F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793A56901C3701C100F489F7 /* RutgersBusApp */;
+			targetProxy = 793A56A61C3701C100F489F7 /* PBXContainerItemProxy */;
+		};
+		793A56B21C3701C100F489F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793A56901C3701C100F489F7 /* RutgersBusApp */;
+			targetProxy = 793A56B11C3701C100F489F7 /* PBXContainerItemProxy */;
+		};
+		793A56E51C3B1D3200F489F7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 793A56E11C3B1D3200F489F7 /* Rutgers Watch App Extension */;
+			targetProxy = 793A56E41C3B1D3200F489F7 /* PBXContainerItemProxy */;
+		};
+		79E496A91C42DF97007E433E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E496A51C42DF97007E433E /* Rutgers Bus Extension */;
+			targetProxy = 79E496A81C42DF97007E433E /* PBXContainerItemProxy */;
+		};
+		79E496EA1C42E472007E433E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E496E61C42E472007E433E /* RUiWatch Extension */;
+			targetProxy = 79E496E91C42E472007E433E /* PBXContainerItemProxy */;
+		};
+		79E496FA1C42E472007E433E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79E496DA1C42E472007E433E /* RUiWatch */;
+			targetProxy = 79E496F91C42E472007E433E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		793A56981C3701C100F489F7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793A56991C3701C100F489F7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		793A569D1C3701C100F489F7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				793A569E1C3701C100F489F7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		79C247A51C44191700D17234 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79C247A61C44191700D17234 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		793A56B71C3701C100F489F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		793A56B81C3701C100F489F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		793A56BA1C3701C100F489F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RutgersBusApp/RutgersBusApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RutgersBusApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Debug;
+		};
+		793A56BB1C3701C100F489F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = RutgersBusApp/RutgersBusApp.entitlements;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = RutgersBusApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+			};
+			name = Release;
+		};
+		793A56BD1C3701C100F489F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RutgersBusAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.niral.RutgersBusAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RutgersBusApp.app/RutgersBusApp";
+			};
+			name = Debug;
+		};
+		793A56BE1C3701C100F489F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = RutgersBusAppTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.niral.RutgersBusAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RutgersBusApp.app/RutgersBusApp";
+			};
+			name = Release;
+		};
+		793A56C01C3701C100F489F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RutgersBusAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.niral.RutgersBusAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RutgersBusApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		793A56C11C3701C100F489F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = RutgersBusAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.niral.RutgersBusAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = RutgersBusApp;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		793A56F71C3B1D3200F489F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Rutgers Watch App/Rutgers Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Rutgers_Watch_App_Extension;
+				INFOPLIST_FILE = "Rutgers Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		793A56F81C3B1D3200F489F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Rutgers Watch App/Rutgers Watch App.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = Rutgers_Watch_App_Extension;
+				INFOPLIST_FILE = "Rutgers Watch App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		793A56F91C3B1D3200F489F7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Rutgers Watch App Extension/Rutgers Watch App Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Rutgers Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		793A56FA1C3B1D3200F489F7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "Rutgers Watch App Extension/Rutgers Watch App Extension.entitlements";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Rutgers Watch App Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				PROVISIONING_PROFILE = "";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		79E496B81C42DF97007E433E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Rutgers Bus Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		79E496B91C42DF97007E433E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Rutgers Bus Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		79E496BC1C42DF97007E433E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = Rutgers_Bus_Extension;
+				INFOPLIST_FILE = "Rutgers Bus/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		79E496BD1C42DF97007E433E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				IBSC_MODULE = Rutgers_Bus_Extension;
+				INFOPLIST_FILE = "Rutgers Bus/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		79E496FD1C42E472007E433E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RUiWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		79E496FE1C42E472007E433E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "RUiWatch Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+		79E497011C42E472007E433E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RUiWatch_Extension;
+				INFOPLIST_FILE = RUiWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Debug;
+		};
+		79E497021C42E472007E433E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
+				IBSC_MODULE = RUiWatch_Extension;
+				INFOPLIST_FILE = RUiWatch/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.niral.Rutgers-Bus-App.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		793A568C1C3701C000F489F7 /* Build configuration list for PBXProject "RutgersBusApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A56B71C3701C100F489F7 /* Debug */,
+				793A56B81C3701C100F489F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793A56B91C3701C100F489F7 /* Build configuration list for PBXNativeTarget "RutgersBusApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A56BA1C3701C100F489F7 /* Debug */,
+				793A56BB1C3701C100F489F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793A56BC1C3701C100F489F7 /* Build configuration list for PBXNativeTarget "RutgersBusAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A56BD1C3701C100F489F7 /* Debug */,
+				793A56BE1C3701C100F489F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793A56BF1C3701C100F489F7 /* Build configuration list for PBXNativeTarget "RutgersBusAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A56C01C3701C100F489F7 /* Debug */,
+				793A56C11C3701C100F489F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793A56FB1C3B1D3200F489F7 /* Build configuration list for PBXNativeTarget "Rutgers Watch App Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A56F91C3B1D3200F489F7 /* Debug */,
+				793A56FA1C3B1D3200F489F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		793A56FD1C3B1D3200F489F7 /* Build configuration list for PBXNativeTarget "Rutgers Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				793A56F71C3B1D3200F489F7 /* Debug */,
+				793A56F81C3B1D3200F489F7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E496B71C42DF97007E433E /* Build configuration list for PBXNativeTarget "Rutgers Bus Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E496B81C42DF97007E433E /* Debug */,
+				79E496B91C42DF97007E433E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E496BB1C42DF97007E433E /* Build configuration list for PBXNativeTarget "Rutgers Bus" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E496BC1C42DF97007E433E /* Debug */,
+				79E496BD1C42DF97007E433E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E496FC1C42E472007E433E /* Build configuration list for PBXNativeTarget "RUiWatch Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E496FD1C42E472007E433E /* Debug */,
+				79E496FE1C42E472007E433E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79E497001C42E472007E433E /* Build configuration list for PBXNativeTarget "RUiWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79E497011C42E472007E433E /* Debug */,
+				79E497021C42E472007E433E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 793A56891C3701C000F489F7 /* Project object */;
+}

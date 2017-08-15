@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="9532" systemVersion="15D21" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="9515"/>
+    </dependencies>
+    <scenes>
+        <!--Routes-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller title="Routes" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="RUiWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Active Routes" textAlignment="center" id="UoO-3k-51k"/>
+                        <table alignment="left" id="diO-qf-m4r">
+                            <items>
+                                <tableRow identifier="routeRow" id="1K9-5V-5KO" customClass="ActiveRoute" customModule="RUiWatch_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="ye9-dY-isl">
+                                        <items>
+                                            <label alignment="center" verticalAlignment="center" text="Route" textAlignment="center" numberOfLines="2" id="uia-tJ-ZwK">
+                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="font" type="system" pointSize="15"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.098039215690000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="activeRoute" destination="uia-tJ-ZwK" id="Ras-sB-M5f"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                        <separator alignment="left" id="INY-Sb-lWr"/>
+                        <button width="1" alignment="left" title="See Nearby Stops" id="GLk-UG-8bA">
+                            <color key="backgroundColor" red="0.11167291548983442" green="0.34981254466839556" blue="0.85164262820512815" alpha="1" colorSpace="calibratedRGB"/>
+                            <connections>
+                                <segue destination="QHx-pa-Ub8" kind="modal" id="DwC-OR-mwn"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <menu key="menu" id="GGw-bz-fWf">
+                        <items>
+                            <menuItem title="Refresh" icon="repeat" id="SwX-Tm-4CY">
+                                <connections>
+                                    <action selector="refreshButton" destination="AgC-eL-Hgc" id="USr-O8-Xzh"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="tableView" destination="diO-qf-m4r" id="saf-Lo-AI8"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="235" y="347"/>
+        </scene>
+        <!--nearbyStops-->
+        <scene sceneID="Flg-Nc-FVs">
+            <objects>
+                <controller identifier="nearbyStops" id="QHx-pa-Ub8" customClass="NearbyStopsInterfaceController" customModule="RUiWatch_Extension">
+                    <items>
+                        <label width="136" height="19.5" alignment="left" text="Nearby Stops" textAlignment="center" id="4YQ-NV-VJh"/>
+                        <table alignment="left" id="YKJ-vM-1GH">
+                            <items>
+                                <tableRow identifier="busStopRow" id="u9g-9f-HR7" customClass="NearbyBusStopRow" customModule="RUiWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="U3E-Co-rBI">
+                                        <items>
+                                            <label height="37.5" alignment="center" text="Bus Stop Name" textAlignment="center" numberOfLines="2" id="uad-yK-Xy1">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.1116729155" green="0.34981254470000001" blue="0.85164262820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="busStopName" destination="uad-yK-Xy1" id="n87-rU-MOQ"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="tableView" destination="YKJ-vM-1GH" id="tSb-F7-BND"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="481" y="672"/>
+        </scene>
+        <!--nearbyDetails-->
+        <scene sceneID="4zX-3y-wmY">
+            <objects>
+                <controller identifier="nearbyDetails" id="ozB-oU-6FP" customClass="NearbyBusRouteInterfaceController" customModule="RUiWatch_Extension">
+                    <items>
+                        <label width="136" alignment="left" text="Current Stop" textAlignment="center" numberOfLines="2" id="AUB-MR-Ibf">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="OpQ-ge-ZpP">
+                            <items>
+                                <tableRow identifier="busRouteRow" selectable="NO" id="aez-3f-drg" customClass="BusRouteRow" customModule="RUiWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="09H-XZ-gK8">
+                                        <items>
+                                            <label width="136" alignment="left" text="Bus Route Name" textAlignment="center" numberOfLines="3" id="ndh-r0-iU3">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="left" text="Predictions" numberOfLines="3" id="hFp-iJ-Ufb">
+                                                <fontDescription key="font" type="italicSystem" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.1116729155" green="0.34981254470000001" blue="0.85164262820000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="busRouteName" destination="ndh-r0-iU3" id="g47-dW-qFe"/>
+                                        <outlet property="predictions" destination="hFp-iJ-Ufb" id="aUK-M5-bne"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="currentStopLabel" destination="AUB-MR-Ibf" id="KG5-3i-J9a"/>
+                        <outlet property="tableView" destination="OpQ-ge-ZpP" id="fzV-0S-30W"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="693" y="669"/>
+        </scene>
+        <!--showDetails-->
+        <scene sceneID="S8S-Cw-Zbn">
+            <objects>
+                <controller identifier="showDetails" id="8CL-QS-xvZ" customClass="DetailInterfaceController" customModule="RUiWatch_Extension">
+                    <items>
+                        <label width="136" alignment="center" text="Current Route" textAlignment="center" id="uXP-VC-PCf">
+                            <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                        </label>
+                        <table alignment="left" id="aDx-Xa-yj2">
+                            <items>
+                                <tableRow identifier="busStopRow" selectable="NO" id="fEk-yT-evW" customClass="BusStopRow" customModule="RUiWatch_Extension">
+                                    <group key="rootItem" width="1" height="0.0" alignment="left" layout="vertical" id="rKh-gC-knn">
+                                        <items>
+                                            <label alignment="center" text="Bus Stop Name" textAlignment="center" numberOfLines="3" id="Lfz-Rj-9W7">
+                                                <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                            </label>
+                                            <label alignment="left" text="Predictions" numberOfLines="3" id="U7Y-M7-v0e">
+                                                <fontDescription key="font" type="italicSystem" pointSize="13"/>
+                                            </label>
+                                        </items>
+                                        <color key="backgroundColor" red="0.80784313730000001" green="0.098039215690000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                                    </group>
+                                    <connections>
+                                        <outlet property="busStopName" destination="Lfz-Rj-9W7" id="wZ9-Os-OR3"/>
+                                        <outlet property="stopPredictions" destination="U7Y-M7-v0e" id="OYM-v4-xPL"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <menu key="menu" id="Ueh-7A-4F5">
+                        <items>
+                            <menuItem title="Refresh" icon="repeat" id="H3M-3d-Yc0">
+                                <connections>
+                                    <action selector="refreshButton" destination="8CL-QS-xvZ" id="9fF-OR-xb7"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
+                    <connections>
+                        <outlet property="tableView" destination="aDx-Xa-yj2" id="dTE-JL-ctd"/>
+                        <outlet property="viewTitle" destination="uXP-VC-PCf" id="hYV-aq-Xic"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="486" y="347"/>
+        </scene>
+        <!--Glance Interface Controller-->
+        <scene sceneID="BOz-TT-tkC">
+            <objects>
+                <glanceController spacing="0.0" id="0uZ-2p-rRc" customClass="GlanceController" customModule="RUiWatch" customModuleProvider="target">
+                    <items>
+                        <group alignment="left" id="t8f-Gd-c4y">
+                            <items>
+                                <label alignment="left" text="Nearby Stops" id="sAp-Du-0Fp"/>
+                            </items>
+                        </group>
+                        <group alignment="left" layout="vertical" id="uCw-4Q-Ouw">
+                            <items>
+                                <table alignment="left" id="iDO-rf-aTJ">
+                                    <items>
+                                        <tableRow id="k7Y-6b-qlw">
+                                            <group key="rootItem" width="1" height="48.5" alignment="left" layout="vertical" id="s15-ad-5og">
+                                                <items>
+                                                    <label alignment="left" text="Bus Stop Name" id="B2L-u1-GYS"/>
+                                                    <label alignment="left" text="Prediction" id="cNP-RL-ceN"/>
+                                                </items>
+                                            </group>
+                                        </tableRow>
+                                    </items>
+                                </table>
+                            </items>
+                        </group>
+                    </items>
+                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="14"/>
+                </glanceController>
+            </objects>
+            <point key="canvasLocation" x="235" y="672"/>
+        </scene>
+        <!--Static Notification Interface Controller-->
+        <scene sceneID="AEw-b0-oYE">
+            <objects>
+                <notificationController id="YCC-NB-fut">
+                    <items>
+                        <label alignment="left" text="Alert Label" id="XkS-y5-khE"/>
+                    </items>
+                    <notificationCategory key="notificationCategory" identifier="myCategory" id="JfB-70-Muf"/>
+                    <connections>
+                        <outlet property="notificationAlertLabel" destination="XkS-y5-khE" id="49B-RR-99y"/>
+                        <segue destination="gdX-wl-uQE" kind="relationship" relationship="dynamicNotificationInterface" id="fKh-qV-3T2"/>
+                    </connections>
+                </notificationController>
+            </objects>
+            <point key="canvasLocation" x="235" y="1001"/>
+        </scene>
+        <!--Notification Controller-->
+        <scene sceneID="KIl-fV-djm">
+            <objects>
+                <controller id="gdX-wl-uQE" customClass="NotificationController" customModule="RUiWatch" customModuleProvider="target"/>
+            </objects>
+            <point key="canvasLocation" x="553" y="1001"/>
+        </scene>
+    </scenes>
+</document>

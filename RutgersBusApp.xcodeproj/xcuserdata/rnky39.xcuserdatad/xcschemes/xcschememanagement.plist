@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Glance - RUiWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>8</integer>
+		</dict>
+		<key>Glance - Rutgers Bus.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>5</integer>
+		</dict>
+		<key>Glance - Rutgers Watch App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Notification - RUiWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>7</integer>
+		</dict>
+		<key>Notification - Rutgers Watch App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>RUiWatch.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>6</integer>
+		</dict>
+		<key>Rutgers Bus.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>4</integer>
+		</dict>
+		<key>Rutgers Watch App.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>RutgersBusApp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>793A56901C3701C100F489F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>793A56A41C3701C100F489F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>793A56AF1C3701C100F489F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>793A56D51C3B1D3200F489F7</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79E496991C42DF96007E433E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>79E496DA1C42E472007E433E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
